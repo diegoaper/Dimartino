@@ -66,6 +66,7 @@ cmd : dcm2niix edf2asc
     * --bids_dir /Path/to/bids/folder 
     * --COINS_BIDS /Path/to/selected_scans.csv (step 1 output)
 	* --subject_list /Path/to/list/of/subjects
+	* --session # (What scan is this for the subject? Scan 1 or 2)
   * needed for input
     * selected_scans.csv (step one output)
     * a folder containing diicom data
