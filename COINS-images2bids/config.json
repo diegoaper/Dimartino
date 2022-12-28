@@ -4,98 +4,98 @@
             "dataType": "anat",
             "modalityLabel": "T1w",
             "criteria": {
-                "SeriesDescription": "ABCD_T1w_MPR",
-				"SeriesNumber": "SNum"
-		}
+                "SeriesDescription": "T1w_MPR_BCP",
+                "SeriesNumber": "SNum"
+               }
         },
         {
             "dataType": "anat",
             "modalityLabel": "T2w",
             "criteria": {
-                "SeriesDescription": "ABCD_T2w_SPC",
-				"SeriesNumber": "SNum"
-		}
+                "SeriesDescription": "T2w_SPC",
+                "SeriesNumber": "SNum"
+                }
+        },
+        {
+            "dataType": "fmap",
+            "modalityLabel": "magnitude",
+            "customLabels": "acq-B0_dir-APinv_101",
+            "criteria": {
+                "SeriesDescription": "DWIcmrr_APinv_dir101_B0",
+                "SeriesNumber": "SNum"
+                }
+        },
+        {
+            "dataType": "fmap",
+            "modalityLabel": "magnitude",
+            "customLabels": "acq-B0_dir-APinv_105",
+            "criteria": {
+                "SeriesDescription": "DWIcmrr_APinv_dir105_B0",
+                "SeriesNumber": "SNum"
+               }
         },
         {
             "dataType": "dwi",
             "modalityLabel": "dwi",
-	    "customLabels": "dir-AP",
+            "customLabels": "acq-3shell_dir-AP_101",
             "criteria": {
-                "SeriesDescription": "DIFF_137_AP",
-				"SeriesNumber": "SNum"
-            }
+                "SeriesDescription": "DWIcmrr_AP_dir101_3shell",
+                "SeriesNumber": "SNum"
+               }
         },
         {
-	    "dataType": "func",
-            "modalityLabel": "bold",
-            "customLabels": "task-rest_run-02",
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "acq-3shell_dir-APinv_101",
             "criteria": {
-                "SeriesDescription": "REST1",
-				"SeriesNumber": "SNum"
-            }
+                "SeriesDescription": "DWIcmrr_APinv_dir101_3shell",
+                "SeriesNumber": "SNum"
+               }
         },
         {
-	    "dataType": "func",
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "acq-3shell_dir-AP_105",
+            "criteria": {
+                "SeriesDescription": "DWIcmrr_AP_dir105_3shell",
+                "SeriesNumber": "SNum"
+               }
+        },
+        {
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "acq-3shell_dir-APinv_105",
+            "criteria": {
+                "SeriesDescription": "DWIcmrr_APinv_dir105_3shell",
+                "SeriesNumber": "SNum"
+               }
+        },
+        {
+            "dataType": "func",
             "modalityLabel": "bold",
             "customLabels": "task-rest_run-01",
             "criteria": {
-                "SeriesDescription": "REST2",
-				"SeriesNumber": "SNum"
-            }
+                "SeriesDescription": "REST1",
+                "SeriesNumber": "SNum"
+               }
         },
         {
-            "dataType": "func",
-            "modalityLabel": "bold",
-            "customLabels": "task-faces_run-01",
-            "criteria": {
-                "SeriesDescription": "FACES1",
-				"SeriesNumber": "SNum"
-            }
-        }, 
-        {
-            "dataType": "func",
-            "modalityLabel": "bold",
-            "customLabels": "task-faces_run-02",
-            "criteria": {
-                "SeriesDescription": "FACES2",
-				"SeriesNumber": "SNum"
-            }
-        },       
-      	{
             "dataType": "fmap",
             "modalityLabel": "magnitude",
             "customLabels": "acq-FMRI_dir-AP",
             "criteria": {
                 "SeriesDescription": "FMRI_DISTORTION_AP",
-				"SeriesNumber": "SNum"
-            }
+                "SeriesNumber": "SNum"
+               }
         },
-	{
+        {
             "dataType": "fmap",
             "modalityLabel": "magnitude",
             "customLabels": "acq-FMRI_dir-PA",
             "criteria": {
                 "SeriesDescription": "FMRI_DISTORTION_PA",
-				"SeriesNumber": "SNum"
-            }
-        },
-	{
-            "dataType": "fmap",
-            "modalityLabel": "magnitude",
-            "customLabels": "acq-SpinEcho_dir-AP",
-            "criteria": {
-                "SeriesDescription": "SpinEcho_Distortion_AP",
-				"SeriesNumber": "SNum"
-            }
-        },
-	{
-            "dataType": "fmap",
-            "modalityLabel": "magnitude",
-            "customLabels": "acq-SpinEcho_dir-PA",
-            "criteria": {
-                "SeriesDescription": "SpinEcho_Distortion_PA",
-				"SeriesNumber": "SNum"
-            }
+                "SeriesNumber": "SNum"
+               }
         }
     ]
 }

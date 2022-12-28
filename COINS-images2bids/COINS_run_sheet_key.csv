@@ -1,13 +1,13 @@
 Scan Name Key,,,,,Use?,,,Physio Use?,
-1,AAHead_scout,,,,0,No,,0,No
-2,ABCD_T1w_MPR,,,,1,Yes ,,1,Yes 
+1,AAHead_Scout,,,,0,No,,0,No
+2,T1w_MPR_BCP,,,,1,Yes ,,1,Yes 
 3,FMRI_DISTORTION_AP,,,,,,,,
 4,FMRI_DISTORTION_PA,,,,,,,,
 5,REST1,,,,,,,,
-6,FACES1,,,,,,,,
-7,FACES2,,,,,,,,
-8,REST2,,,,,,,,
-9,ABCD_T2w_SPC,,,,,,,,
-10,SpinEcho_Distortion_AP,,,,,,,,
-11,SpinEcho_Distortion_PA,,,,,,,,
-12,DIFF_137_AP,,,,,,,,
+6,T2w_SPC,,,,,,,,
+7,DWIcmrr_APinv_dir101_B0,,,,,,,,
+8,DWIcmrr_AP_dir101_3shell,,,,,,,,
+9,DWIcmrr_APinv_dir101_3shell,,,,,,,,
+10,DWIcmrr_APinv_dir105_B0,,,,,,,,
+11,DWIcmrr_AP_dir105_3shell,,,,,,,,
+12,DWIcmrr_APinv_dir105_3shell,,,,,,,,

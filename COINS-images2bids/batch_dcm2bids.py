@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Fri Apr 13 16:40:10 2018
@@ -31,6 +31,7 @@ parser.add_argument("--source_dir",dest="source", required=True, help='The direc
 parser.add_argument("--bids_dir",dest="destination", required=True, help='The directory the bids data should be put in')
 parser.add_argument("--COINS_BIDS",dest="COINS_BIDS", required=True, help='selected_scans.csv output from COINS_BIDS_setup')
 parser.add_argument('--subject_list', dest='subject_list', required=True, help='List of subjects to convert to bids')
+parser.add_argument('--session', dest='session', required=True, help='Session for the subjects')
 
 if len(sys.argv)==1:
     parser.print_help()
@@ -65,14 +66,19 @@ if args.subject_list:
     subject_list = f.read().splitlines()
     f.close()
 
+if args.session:
+    session = args.session
+
 path = fullpaths.split('/')
 
-subID=coins_bids['Scan_Subject_ID']
-for i in range(len(subID)):  
+subID=coins_bids['Prek_Scan_SubID']
+for i in range(len(subID)):
     subid2 = 'sub-' + str(subID[i])
+    if 'b2' in subid2:
+        subid3 = subid2.split('b')[0]
     if subid2 in subject_list:
         if os.path.exists(fullpaths + "/sub-"+ str(subID[i]) + "/" + str(subID[i]) + ".json"):
-            cmd="dcm2bids -d " + fullpaths + "/sub-" + str(subID[i]) + " -p " + str(subID[i]) + " -c " + fullpaths + "/sub-"+ str(subID[i]) + "/" + str(subID[i]) + ".json" + " -o " + fullpathd
+            cmd="dcm2bids -d " + fullpaths + "/sub-" + str(subID[i]) + " -p " + str(subID[i]) + " -c " + fullpaths + "/sub-"+ str(subID[i]) + "/" + str(subID[i]) + ".json" + " -s " + session + " -o " + fullpathd
             os.system(cmd)
         else:
             f = open(fullpaths + '/error_log.txt', 'a')
